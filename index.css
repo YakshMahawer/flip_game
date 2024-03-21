@@ -1,0 +1,46 @@
+.hidden {
+    opacity: 0;
+  }
+
+  .show-animation {
+    transform: rotateY(180deg);
+  }
+
+  .card > span{
+    font-size: 46px;
+  }
+  
+  .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 0.2s;
+  }
+  
+  .container {
+    height: 600px;
+    width: 600px;
+    display: grid;
+  
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: translateZ(70deg);
+    }
+    100% {
+      transform: translateZ(100deg);
+    }
+  }
